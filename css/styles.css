@@ -1,0 +1,59 @@
+@font-face {
+  font-family: main-font;
+  src: url(../assets/fonts/911-porscha/911v2.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+  /* background-color: red; */
+  background-image: url(/assets/Images/test.jpg);
+  background-size: cover;
+}
+nav{
+  /* background-color: darkcyan; */
+  /* backdrop-filter: blur(6px); */
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(2px);
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.1em;
+}
+.nav-links{
+  display: flex;
+  /* width: 100vw; */
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.1em;
+  /* display: flex; */
+  list-style-type: none;
+  color: antiquewhite;
+  /* padding: 0.8em 1.4em; */
+  font-family: main-font;
+  font-size: 1.2em;
+}
+
+.Porsche-logo{
+  /* max-width: 4em; */
+  padding: 0.2em 2em;
+  width: 5em;
+  margin-right: auto;
+  /* float: left; */
+  /* justify-self: flex-start; */
+  /* align-self: flex-start; */
+}
+.nav-links > li > a{
+  text-decoration: none;
+  color:darkorange;
+  padding: 0.8em 0.8em;
+  border-radius: 10px;
+}
+
+a:hover{
+  background-color: rgb(255 255 255 / 40%); 
+}
