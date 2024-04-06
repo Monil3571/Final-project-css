@@ -18,13 +18,13 @@
   }
   body{
     /* background-color: ; */
-    background-image: url(./assets/Images/test.jpg);
+    background-image: url(../assets/Images/test.jpg);
     background-size: cover;
     font-family: 'Poppins', sans-serif;
   }
   
   .contact-page{
-    background-image: url(/assets/Images/contact-image.jpg);
+    background-image: url(../assets/Images/contact-image.jpg);
     background-size: cover;
     font-family: 'Poppins', sans-serif;
   }
