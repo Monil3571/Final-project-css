@@ -265,6 +265,11 @@ button[type="submit"]:hover {
 /* The below section is for the footers */
 
 footer{
+  /*placed the footer at the bottom*/
+  position: fixed; /* Fixed positioning */
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: white;
   display: flex;
   justify-content: center;
