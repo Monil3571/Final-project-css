@@ -41,12 +41,12 @@
         background-attachment: fixed; 
       } 
     .exp-top-banner {
-        height: 70vh;
+        height: 60vh;
     }
     .exp-top-banner p{
         color: black;
         font-size: 4em;
-        top: 40vw;
+        bottom: 40vw;
         left: 5vw;
         /* height: 40vh; */
     }
