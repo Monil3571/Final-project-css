@@ -1,14 +1,14 @@
 @font-face {
   font-family: main-font;
-  src: url(../assets/fonts/911-porscha/911v2.ttf);
+  src: url('../assets/fonts/911-porscha/911v2.ttf');
 }
 @font-face {
   font-family: ff-din;
-  src: url(../assets/fonts/Din-Font/DIN.ttf)
+  src: url('../assets/fonts/Din-Font/DIN.ttf')
 }
 @font-face {
   font-family: large-heading;
-  src: url(../assets/fonts/BebasNeue-font/BebasNeue/BebasNeue-Bold.ttf)
+  src: url('../assets/fonts/BebasNeue-font/BebasNeue/BebasNeue-Bold.ttf')
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
@@ -25,17 +25,22 @@ body{
 }
 
   .experience-page{
-  background-image: url(../assets/Images/porsche-normal.jpg);
+  background-image: url('../assets/Images/porsche-normal.jpg');
   background-size: cover; 
   background-position: center;
   background-attachment: fixed; 
-  } 
-  .models-page{
-    background: linear-gradient(to bottom, #000000, #434343);
+} 
+.models-page{
+  /* background: linear-gradient(to bottom, #000000, #434343); */
+  
+  background-image: url('../assets/Images/logo-dark-rain.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed; 
     background-attachment: fixed; 
 }
 .contact-page{
-  background-image: url(../assets/Images/contact-image.jpg);
+  background-image: url('../assets/Images/contact-image.jpg');
   background-size: cover;
   font-family: 'Poppins', sans-serif;
 }
@@ -210,7 +215,7 @@ a,.btn{
   .exp-heading{
     text-align: center;
     font-family: large-heading;
-    font-size: 4em;
+    /* font-size: 4em; */
 
   }
    .motorsports-container{
@@ -221,20 +226,35 @@ a,.btn{
     gap: 7vw;
     align-items: flex-start;
   }
+  .history-container{
+    margin: 0 10vw;
+    display: flex;
+    align-items: center;
+  }
   
   .motorsports-container img{
     width: 40vw;
   }
-
+  .history-img{
+    height: 60vh;
+  }
   .motorsports-text-container h1{
     font-size: 1.7em;
     padding: 2vh 0;
+    text-wrap: balance;
   }
   .motorsports-text-container p{
     font-size: 1.2em;
   }
+  .history-container h1{
+    font-size: 2.2em;
+    /* background-color: yellow; */
+  }
 
-
+  .motorsports-heading{
+    /* background-color: #A43131; */
+    font-size: 4em;
+  }
 
 
 
@@ -249,7 +269,8 @@ a,.btn{
   .models {
     display: flex;
     justify-content: center;
-    gap: 15vw;
+    /* align-items: center; */
+    gap: 10vw;
     flex-wrap: wrap;
     margin: 5vw;
 
@@ -257,8 +278,10 @@ a,.btn{
   }
   
   .model-card {
-    max-width: 30vw;
+    /* max-width: 30vw; */
+    width: 30vw;
     background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -380,6 +403,27 @@ button[type="submit"]:hover {
 }
 
 
+
+.quote{
+  /* padding: 0 auto; */
+  /* margin: auto 0; */
+
+  height: 15vh;
+  font-family: large-heading;
+  font-size: 2em;
+  background-color: black;
+  color: white;
+}
+
+.quote p{
+  /* margin: 5vh; */
+  /* padding: 10vh [20vh; */
+  position: relative;
+  /* padding: 0 auto; */
+  text-align: center;
+  /* justify-content: center; */
+  top: 30%;
+}
 
 
 /* The below section is for the footers */

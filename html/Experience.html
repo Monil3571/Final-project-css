@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/Images/porsche_new_logo.png">
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/mediaqueries.css" />
     <title>Porsche</title>
@@ -48,12 +49,41 @@
     </header>
 
     <section class="exp-top-banner">
-      <p class="exp-banner-text">A little bit about us</p>
+      <p class="exp-banner-text">Experience Porsche.</p>
     </section>
     <main class="experience-body">
-
-       <section class="exp-main-container">
-        <h1 class="exp-heading">Porsche Motorsports</h1>
+      <section class="exp-main-container">
+        <article class="motorsports-container history-container alt">
+          <div class="motorsports-text-container">
+            <h1 class="exp-heading">
+              "Porsche: Pioneering Heritage and Timeless Elegance"
+            </h1>
+            <p class="motorsports-text">
+              Porsche, founded by Ferdinand Porsche in 1931, initially focused
+              on motor vehicle development and consulting. Their landmark
+              achievement came with the design of the Volkswagen Beetle,
+              commissioned by the German government. During World War II,
+              Porsche contributed to military vehicles like the Kübelwagen and
+              Schwimmwagen. Post-war, Ferdinand Porsche faced repercussions,
+              while his son Ferry Porsche initiated the production of the 356 in
+              Austria. This marked Porsche's entry into manufacturing sports
+              cars. As demand grew, production shifted to Stuttgart, and
+              collaborations with Reutter Karosserie led to the steel-bodied
+              356. The model was road-certified in 1948, solidifying Porsche's
+              presence in the automotive world. Over the years, Porsche
+              continued to innovate, producing iconic models like the 911 and
+              expanding its influence in motorsports, securing numerous
+              victories. Today, Porsche stands as a symbol of precision
+              engineering, luxury, and performance in the automotive industry.
+            </p>
+          </div>
+          <img
+            src="../assets/Images/porsche-creator.jpg"
+            alt=""
+            class="history-img"
+          />
+        </article>
+        <h1 class="exp-heading motorsports-heading">Porsche Motorsports</h1>
         <article class="motorsports-container">
           <img
             src="../assets/Images/Porsche 963.jpg"
@@ -99,11 +129,7 @@
         </article>
 
         <article class="motorsports-container">
-          <img
-            src="../assets/Images/911 gtr3 r.jpg"
-            alt=""
-            class="model-img"
-          />
+          <img src="../assets/Images/911 gtr3 r.jpg" alt="" class="model-img" />
           <div class="motorsports-text-container">
             <h1>"Unleashing Heritage: The Exquisite 911 GT3 R Rennsport"</h1>
             <p class="motorsports-text">
@@ -121,41 +147,85 @@
             </p>
           </div>
         </article>
+        <article class="motorsports-container alt">
+          <div class="motorsports-text-container">
+            <h1>"Iconic Wheels: The Porsche Museum Chronicles"</h1>
+            <p class="motorsports-text">
+              The original Porsche museum, opened in 1976 near the factory,
+              housed around 20 rotating exhibits. Plans for a new museum
+              alongside Mercedes-Benz were discussed, but Porsche opted to
+              upgrade its existing location. Costing 100 million euros, the new
+              museum in Zuffenhausen opened in January 2009, covering 5600
+              square meters with over 80 exhibits. Designed by Delugan Meissl
+              Architects and HG Merz, it focuses on the vehicles with subtle
+              architectural elements. The museum serves as a home base for its
+              exclusive collection, showcasing Porsche's rich automotive history
+              since its opening to visitors in January 2009.
+            </p>
+          </div>
+          <img
+            src="../assets/Images/porsche-museum.jpg"
+            alt=""
+            class="model-img"
+          />
+        </article>
       </section>
     </main>
-
+    <section class="quote">
+      <p>"In the beginning I looked around but couldn't find the car I dreamt of, so I decided to build it myself." - Dr Porsche.</p>
+    </section>
     <footer>
-      <div class="footer-logo"><img src="../assets/Images/Logo-no-text.png" alt="" srcset=""></div>
+      <div class="footer-logo">
+        <img src="../assets/Images/Logo-no-text.png" alt="" srcset="" />
+      </div>
       <ul class="socials-list">
-        <p> Socials </p>
-        <li><img src="../assets/Images/Insta-logo.png" alt="" class="socials-images"><a href="https://www.instagram.com/porsche/">Instagram</a></li>
-          <li><img src="../assets/Images/twitter-logo.png" alt="" class="socials-images"><a href="https://twitter.com/Porsche">Twitter</a></li>
-          <li><img src="../assets/Images/linkedin-logo.png" alt="" class="socials-images"><a href="https://www.linkedin.com/company/porsche-ag/">LinkedIn</a></li>
-        </ul>
+        <p>Socials</p>
+        <li>
+          <img
+            src="../assets/Images/Insta-logo.png"
+            alt=""
+            class="socials-images"
+          /><a href="https://www.instagram.com/porsche/">Instagram</a>
+        </li>
+        <li>
+          <img
+            src="../assets/Images/twitter-logo.png"
+            alt=""
+            class="socials-images"
+          /><a href="https://twitter.com/Porsche">Twitter</a>
+        </li>
+        <li>
+          <img
+            src="../assets/Images/linkedin-logo.png"
+            alt=""
+            class="socials-images"
+          /><a href="https://www.linkedin.com/company/porsche-ag/">LinkedIn</a>
+        </li>
+      </ul>
 
-        <div>
-          <ul class="footer-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../html/Models.html">Models</a></li>
-            <li><a href="./html/Experience.html">Experience</a></li>
-            <li><a href="../html/Contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <section class="footer-cta">
-          <h2> Subscribe to our newsletter!! </h2>
-          <form id="ctaForm" action="#" method="POST">
-              <div class="form-group">
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required>
-              </div>
-              <div class="form-group">
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
-              </div>
-              <button type="submit">Submit</button>
-          </form>
-        </section>
-        <p>Copyright &#169; 2024 Porsche. All Rights Reserved</p>
+      <div>
+        <ul class="footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/Models.html">Models</a></li>
+          <li><a href="./html/Experience.html">Experience</a></li>
+          <li><a href="../html/Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <section class="footer-cta">
+        <h2>Subscribe to our newsletter!!</h2>
+        <form id="ctaForm" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <p>Copyright &#169; 2024 Porsche. All Rights Reserved</p>
     </footer>
     <script src="../javascript/script.js"></script>
   </body>
