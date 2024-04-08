@@ -6,41 +6,53 @@
   font-family: ff-din;
   src: url(../assets/fonts/Din-Font/DIN.ttf)
 }
+@font-face {
+  font-family: large-heading;
+  src: url(../assets/fonts/BebasNeue-font/BebasNeue/BebasNeue-Bold.ttf)
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 
 *{
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-  }
-  body{
-    /* background-color: ; */
-    background-image: url('../assets/Images/test.jpg');
-    background-size: cover;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .contact-page{
-    background-image: url('../assets/Images/contact-image.jpg');
-    background-size: cover;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  a,.btn{
-    transition: all 300ms ease;
-  }
-  
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+  .experience-page{
+  background-image: url(../assets/Images/porsche-normal.jpg);
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed; 
+  } 
+  .models-page{
+    background: linear-gradient(to bottom, #000000, #434343);
+    background-attachment: fixed; 
+}
+.contact-page{
+  background-image: url(../assets/Images/contact-image.jpg);
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+a,.btn{
+  transition: all 300ms ease;
+}
+
   nav,.nav-links{
     display: flex;
   }
   
   nav{
     justify-content: space-around;
-    /* background-color: rgb(255 255 255 / 30%);
-    backdrop-filter: blur(2px); */
+    background-color: rgba(165, 149, 149, 0.1);
+    backdrop-filter: blur(10px);
     align-items: center;
     height: 17vh;
     font-family: 'lato', sans-serif;
@@ -53,7 +65,6 @@
   }
   
   a{
-    /* color: black; */
     color: white;
     text-decoration: none;
     text-decoration-color: white;
@@ -61,13 +72,11 @@
   }
   
   a:hover{
-    /* color: grey; */
     color: #7B9FC0;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    /* text-decoration-color: rgb(181,181,181); */
     text-decoration-color: #7B9FC0;
-
+    
   }
   
   .logo{
@@ -158,32 +167,157 @@
     transform: none;
   }
   
+  /* The below section is for the home page */
+
+  .home-container{
+    background-image: url('../assets/Images/grey-porsche-rear.jpg');
+    background-size:cover;
+    height: 90vh;
+  }
+  .home-heading{
+    font-size: 4em;
+  }
+
+
+
+
+
+
+  
+  /* The below section is for The Experience page: */
+
+  .exp-top-banner{
+  height: 90vh;
+  }
+
+  .exp-top-banner p{
+    position: absolute;
+    color: white;
+    bottom: 4vw;
+    left: 4vw;
+    font-size: 5em;
+    font-family: large-heading;
+  }
+  .exp-main-container{
+    background-color: white;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10vh;
+  }
+  
+  .exp-heading{
+    text-align: center;
+    font-family: large-heading;
+    font-size: 4em;
+
+  }
+   .motorsports-container{
+    display: flex; 
+    backdrop-filter: blur(5px); 
+    padding: 5vh 0 ;
+    padding-top: 10vh;
+    gap: 7vw;
+    align-items: flex-start;
+  }
+  
+  .motorsports-container img{
+    width: 40vw;
+  }
+
+  .motorsports-text-container h1{
+    font-size: 1.7em;
+    padding: 2vh 0;
+  }
+  .motorsports-text-container p{
+    font-size: 1.2em;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /* The below section is for models page */
+
+  .models {
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+    flex-wrap: wrap;
+    margin: 5vw;
+
+
+  }
+  
+  .model-card {
+    max-width: 30vw;
+    background-color: rgb(255 255 255 / 30%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: #f7e4e3;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .model-card:hover {
+    transform: translateY(-20px);
+  }
+  
+  .model-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .model-specs {
+    padding: 15px;
+  }
+  
+  .model-name {
+    font-size: 1.4rem;
+    font-family: main-font;
+    margin-bottom: 10px;
+    letter-spacing: 0.1em;
+  }
+  
+  .model-price {
+    font-size: 1rem;
+    color: #C29049;
+  }
+  
+  .spec-item {
+    margin-top: 10px;
+  }
+  
+  .spec-label {
+    font-weight: bold;
+  }
+  
+  .spec-value {
+    margin-left: 5px;
+  }
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
   
   /* The below section is for the contact page */
   
   .form-container {
-    /* background-color: rgb(80 139 175 /30%); */
     display: flex ;
     flex-direction: column;
     align-items: center;
@@ -194,14 +328,9 @@
     padding: 2em 2em;
     font-size: 1.2em;
     color: aliceblue;
-    /* background: linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%); */
     border-radius: 15px;
-    /* font-family: 'Poppins', sans-serif; */
     font-family: ff-din;
     font-weight: 750;
-  }
-  #contactForm{
-    /* width: 80%; */
   }
   h2 {
     text-align: center;
@@ -210,12 +339,11 @@
   
   .form-group {
     margin-bottom: 20px;
-    /* width: 90%; */
+   
   }
   
   label {
     display: block;
-    /* margin: 0 2em; */
     margin-top: 1em;
     margin-bottom: 0.4em;
   }
@@ -223,12 +351,9 @@
   input[type="text"],
   input[type="email"],
   input[type="tel"] {
-    /* width: 80%; */
-  /* width: 70%; */
   padding: 0.3em;
   border: 1px solid #ccc;
   border-radius: 5px;
-  /* background-color: white; */
   color: aliceblue;
   font-size: 1.05em;
   background-color: rgb(187 149 114 /80%);
@@ -242,11 +367,8 @@ button[type="submit"] {
   width: 50%;
   padding: 0.5em 0.3em;
   margin: 1em 3em;
-  /* background-color: #007bff; */
-  /* background-color: white; */
   background-color: rgb(187 114 115/80%);
   backdrop-filter: blur(2px);
-  /* color: #fff; */
   border: none;
   color: aliceblue;
   border-radius: 5px;
@@ -260,16 +382,9 @@ button[type="submit"]:hover {
 
 
 
-
-
 /* The below section is for the footers */
 
 footer{
-  /*placed the footer at the bottom*/
-  position: fixed; /* Fixed positioning */
-  bottom: 0;
-  left: 0;
-  width: 100%;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -283,21 +398,18 @@ footer ul{
   display: flex;
   flex-direction: column;
   list-style: none;
-  /* align-items: center; */
   justify-content: center;
   gap: 0.4em;
 }
 
 footer ul li{
   display: flex;
-  /* flex-direction: ; */
   align-items: center;
 }
 footer a{
   color: black;
 }
 footer a:hover{
-  /* background-color: #ccc; */
   text-decoration: none;
   color: #ccc;
 }
@@ -309,7 +421,6 @@ footer a:hover{
   width:2em;
 }
 .footer-logo>img{
-  /* width: 4em; */
   height: 4em;
 }
 .footer-cta{
@@ -319,7 +430,7 @@ footer a:hover{
 }
 footer h2{
   margin: 0;
-  /* background-color: aquamarine; */
+  
 }
 
 footer button[type="submit"] {
@@ -330,7 +441,6 @@ footer button[type="submit"] {
 
 footer input[type="text"],
 footer input[type="email"]{
-  /* background-color: rgb(206, 80, 80); */
   background-color: #A43131;
   color: white;
 }

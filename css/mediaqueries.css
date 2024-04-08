@@ -32,4 +32,25 @@
         gap: 0.4em;
         flex-wrap: wrap;
       }
+    .motorsports-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        /* flex-wrap: wrap; */
+    }
+    .alt{
+        flex-direction: column-reverse;
+    }
+    .motorsports-container img{
+        width: 70vw;
+    }
+    .motorsports-container h1{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .model-card{
+        max-width: none;
+    }
 }
